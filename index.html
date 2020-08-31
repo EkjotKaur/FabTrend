@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/palette.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/navbar.css">
+    <link rel="stylesheet" href="./src/css/modal.css">
+    <link rel="stylesheet" href="./src/css/slideshow.css">
+    <link rel="stylesheet" href="./src/css/cards.css">
+
+    <title>FabTrend</title>   
+  </head>
+  <body>
+    <nav class="navbar dark-primary-color text-primary-color m-0">
+      <a href="./" class="navbar-brand">FabTrend</a>
+      <button class="btn-toggler">
+        <i class="fas fa-bars"></i> 
+      </button>
+
+      <div class="navbar-collapse">
+        <ul class="navbar-list">
+          <li>
+            <form class="nav-search">
+              <input type="search" name="" id="" placeholder="Search products, brands and more">
+              <button class="btn default-primary-color text-primary-color btn-outline">Search</button>
+            </form>
+          </li>
+          <li class="nav-link">
+            <div><a onclick="loginModal()">Login</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a onclick="signUpModal()">SignUp</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./cart">Cart</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a>Help</a></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="navbar-toggle toggler dark-primary-color text-primary-color m-0">
+      <ul class="navbar-list m-0">
+        <li>
+          <form class="nav-search">
+            <input type="search" name="" id="" placeholder="Search products, brands and more">
+            <button class="btn default-primary-color text-primary-color btn-outline">Search</button>
+          </form>
+        </li>
+        <li class="nav-link">
+          <div><a onclick="loginModal()">Login</a></div>
+        </li>
+        <li class="nav-link">
+          <div><a onclick="signUpModal()" >SignUp</a></div>
+        </li>
+        <li class="nav-link">
+          <div><a href="./cart">Cart</a></div>
+        </li>
+        <li class="nav-link">
+          <div><a href="./help">Help</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="navbar default-primary-color text-primary-color m-0 subnavbar">  
+      <div class="navbar-collapse subnav">
+        <ul class="navbar-list">
+          <li class="nav-link">
+            <div><a href="./Home">Home</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./">About</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./">Kids</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./help">Womens</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./help">Mens</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./help">Assessories</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./help">Contact</a></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="navbar-toggle toggler dark-primary-color text-primary-color m-0 subnav">
+      <hr class="m-0 p-0">
+      <ul class="navbar-list m-0">
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./">Home</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./signup">About</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./cart">Kids</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./help">Womens</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./help">Mens</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./help">Assessories</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./help">Contact</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- The Modal -->
+    <div id="loginModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content light-primary-color">
+        <div class="modal-header">
+          <span onclick="closeLogin()" class="close">&times;</span>
+          <h2>Login</h2>
+        </div>
+        <hr>
+        <div class="modal-body ">
+          <form>
+            <div class="input-group">
+              <label for="email-login">Email:</label>
+              <input type="email" name="" id="email-login">
+            </div>
+            <div class="input-group">
+              <label for="password-login">Password:</label>
+              <input type="email" name="" id="email-login">
+            </div>          
+          </form>
+        </div>
+        <hr>
+        <div class="modal-footer">
+          <button type="submit" class="btn default-primary-color default-border-color text-primary-color modal-btn">Login</button>
+          <button type="reset" onclick="closeLogin()"  class="btn default-color default-border-color modal-btn">Close</button>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="signUpModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content light-primary-color">
+        <div class="modal-header">
+          <span onclick="closeSignUp()" class="close">&times;</span>
+          <h2>Sign Up</h2>
+        </div>
+        <hr>
+        <div class="modal-body ">
+          <form>
+            <div class="input-group">
+              <label for="fname-login">First Name:</label>
+              <input type="text" name="" id="fname-login">
+            </div>
+            <div class="input-group">
+              <label for="lname-login">Last Name:</label>
+              <input type="text" name="" id="lname-login">
+            </div>
+            <div class="input-group">
+              <label for="email-login">Email:</label>
+              <input type="email" name="" id="email-login">
+            </div>
+            <div class="input-group">
+              <label for="password-login">Password:</label>
+              <input type="email" name="" id="email-login">
+            </div>          
+          </form>
+        </div>
+        <hr>
+        <div class="modal-footer">
+          <button type="submit" class="btn default-primary-color default-border-color text-primary-color modal-btn">Sign Up</button>
+          <button type="button" onclick="closeSignUp()"  class="btn default-color default-border-color modal-btn closeWindow">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!--##############################################################################################################################################  -->
+    <section class="slider">
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade slide_1">
+        <div class="inner">
+          <div class="text text-1">
+            <h1 class="head-1">End Of Season Sale</h1>
+            <h3 class="para-1" >Flat 50% off on All Brands</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mySlides fade slide_2">
+        <div class="inner">
+          <div class="text text-2">
+            <h1 class="head-2">Festive Sale</h1>
+            <h3 class="para-2" >Starting from 7th October to 14th October</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mySlides fade slide_3">
+        <div class="inner">
+          <div class="text text-3">
+            <h1 class="head-3">Free Delivery</h1>
+            <h3 class="para-3" >What are you waiting for?</h3>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </section>
+  
+    <!-- ###################################################################################################################################### -->
+
+    <section class="womens cards">
+      <h1 class="m-0">Womens</h1>
+      <hr>
+      <div class="row">
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/Kurta-and-Kurtasets.webp" alt="">
+          <p class="offers"> 50% Off On Ethenic Kurtas</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/Dresses.webp" alt="">
+          <p class="offers">30% Off On Casual Dresses</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/Sarees.webp" alt="">
+          <p class="offers">40% Off On All Brands</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/Heels.jpg" alt="">
+          <p class="offers">40-60% Off On Heels</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/Jeans.webp" alt="">
+          <p class="offers">Buy 1 get 2 free On Denims</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/Flats---Heels.webp" alt="">
+          <p class="offers">Buy 3 and pay for 2</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/Handbags.webp" alt="">
+          <p class="offers">Explore the Fresh Arrivals</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/Slices_21_01.webp" alt="">
+          <p class="offers">Explore the Comfort</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/Tops-_-Tees.webp" alt="">
+          <p class="offers">40-80% Of and Tops</p>
+        </a></div>
+        <div class="col">
+          <img class="product" src="./src/img/Beauty.jpg" alt="">
+          <p class="offers">Fresh Stock Available</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ###################################################################################################################################### -->
+
+    <section class="mens cards">
+      <h1 class="m-0">Mens</h1>
+      <hr>
+      <div class="row">
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/mens/T-shirt.webp" alt="">
+          <p class="offers">50% Off On 700/- and Above</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/mens/Shirts.webp" alt="">
+          <p class="offers">Starting From 999/- only</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/mens/Jeans.webp" alt="">
+          <p class="offers">40% Off On All Brands</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/mens/Sports-Shoes.webp" alt="">
+          <p class="offers">40-60% Off On Shoes</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/mens/Trackpants.jpg" alt="">
+          <p class="offers">Buy 1 get 2 on shorts</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/mens/Shorts-_-Trousers.webp" alt="">
+          <p class="offers">Buy 3 and pay for 2</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/mens/Innerwear-.jpg" alt="">
+          <p class="offers">Explore the Fresh Arrivals</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/mens/Grooming.webp" alt="">
+          <p class="offers">Explore the Comfort</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/mens/Casual-Shoes.webp" alt="">
+          <p class="offers">50% Off and Shoes and more</p>
+        </a></div>
+        <div class="col">
+          <img class="product" src="./src/img/mens/Backpacks---Accessories.webp" alt="">
+          <p class="offers">Fresh Stock Available</p>
+        </div>
+      </div>
+    </section>
+    <!-- ###################################################################################################################################### -->
+
+    <section class="kids cards">
+      <h1 class="m-0">Kids</h1>
+      <hr>
+      <div class="row">
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/kids/Value-Packs.webp" alt="">
+          <p class="offers">50% Off On 700/- and Above</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/kids/Kids--1-.webp" alt="">
+          <p class="offers">Starting From 999/- only</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/kids/Infant-Essential.jpg" alt="">
+          <p class="offers">40% Off On All Brands</p>
+        </a></div>
+    </section>
+
+    <!-- ###################################################################################################################################### -->
+
+    <section class="accessories cards">
+      <h1 class="m-0">Accessories</h1>
+      <hr>
+      <div class="row">
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/assessories/Masks.webp" alt="">
+          <p class="offers">50% Off On 700/- and Above</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/assessories/Headphones.webp" alt="">
+          <p class="offers">Starting From 999/- only</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/assessories/Watches.webp" alt="">
+          <p class="offers">40% Off On All Brands</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/assessories/Sanitizer.webp" alt="">
+          <p class="offers">40-60% Off On Shoes</p>
+        </a></div>
+        <div class="col">
+        <a href=""><img class="product" src="./src/img/assessories/Home.jpg" alt="">
+          <p class="offers">Buy 1 get 2 on shorts</p>
+        </a></div>
+      </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./src/js/navbar.js"></script>
+    <script src="./src/js/modal.js"></script>
+    <script src="./src/js/slideshow.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  </body>
+</html>
