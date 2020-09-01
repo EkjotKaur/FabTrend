@@ -80,8 +80,81 @@ const kurtas = [
     img: "./src/img/kurtas/pic-8.webp"
   }
 
-]
-console.log(kurtas[2]);
+];
+
+const tops = [
+  {
+    name: "Harpa",
+    subName: "Women Black Solid Top with Floral Embroidery",
+    price: "Rs. 764",
+    productDetails: ["Black solid knitted regular top with embroidered detail, has a high neck, short sleeves, button closure"],
+    sleeveLength: "Short Sleeves",
+    TopPattern: "Solid",
+    machineWash: "Hand Wash",
+    img: "./src/img/tops/tops-1.webp"
+  },
+  {
+    name: "SASSAFRAS",
+    subName: "Women Peach-Coloured Solid Round Neck T-shirt",
+    price: "Rs. 399",
+    productDetails: ["Peach-Coloured solid T-shirt, has a round neck, short sleeves"],
+    sleeveLength: "Short Sleeves",
+    TopPattern: "New Basics",
+    machineWash: "Machine Wash",
+    img: "./src/img/tops/top-2.webp"},
+
+  {
+    name: "Roadster",
+    subName: "Time Travlr Women Peach & Purple Slim Fit Checked Casual Shirt",
+    price: "Rs. 844",
+    productDetails: ["Peach and purple checked casual shirt, has a spread collar, button placket, long sleeves, two pockets, curved hem"],
+    sleeveLength: "Three-Quarter Sleeves",
+    TopPattern: "Buffalo Checks",
+    machineWash: "Machine Wash",
+    img: "./src/img/tops/top-3.webp"
+  },
+  {
+    name: "Harpa",
+    subName: "Women Pink Printed Styled Back Top",
+    price: "Rs. 679",
+    productDetails: ["Pink and white printed woven styled back top, has a V-neck, long sleeves"],
+    sleeveLength: "Long Sleeves",
+    TopPattern: "Floral",
+    machineWash: "Hand Wash",
+    img: "./src/img/tops/top-4webp.webp"
+  }
+];
+const heels = [
+  {
+    name: "Mast & Harbour",
+    subName: "Women Black Glitter Mid-Top Heels",
+    price: "Rs. 1374",
+    productDetails: ["A pair of black glitter open toe heels, has mid-top styling, ankle loop detail"],
+    img: "./src/img/heels/heels-1.webp"
+  },
+  {
+    name: "ZAPATOZ",
+    subName: "Women Pink Solid Embellished Suede Heeled Boots",
+    price: "Rs. 679",
+    productDetails: ["A pair of pink round toe embellished heeled boots, has high-top styling, lace-ups detail"],
+    img: "./src/img/heels/heels-2.webp"},
+
+  {
+    name: "Anouk",
+    subName: "Women Pink Embroidered Mojarist",
+    price: "Rs. 1499",
+    productDetails: ["A pair of pink embroidered square toe mojaris, has regular styling, slip-on detail"],
+    img: "./src/img/heels/heels-3.webp"
+  },
+  {
+    name: "DressBerry",
+    subName: "Women White Sneakers",
+    price: "Rs. 1399",
+    productDetails: ["A pair of round-toe white sneakers, has regular styling, lace-up detail"],
+    img: "./src/img/heels/heels-4.webp"
+  }
+];
+
 
 const display_kurtas = document.getElementById("kurta");
 
@@ -138,6 +211,98 @@ const closeWindow = () => {
 const processDetails = (card) => {
   toggle();
   showDetails(card);
+  closeWindow();
+};
+
+// ##########################################################################################
+
+const showDetailsTops = (card) => {
+  let output = "";
+  output += `
+<div class="pop-structure">
+  <div class="close-display"><i class="fas fa-window-close"></i></div>
+  <div class="row"> 
+    <div class="displayImg">
+      <img src="${tops[card].img}" alt="">
+    </div>
+    <div class="displayDetails">
+      <h3 class="display-name">${tops[card].name}</h3>
+      <h3 class="display-subname">${tops[card].subName}</h3>
+      <h2 class="money">${tops[card].price}</h2>
+      <p class="taxes">inclusive of all taxes</p>
+      <h4 class="size">SELECT SIZE</h4>
+      <div class="row-1">
+        <div class="col-2">XS</div>
+        <div class="col-2">S</div>
+        <div class="col-2">M</div>
+        <div class="col-2">L</div>
+        <div class="col-2">XL</div>
+      </div>
+      <button class="btn add-to-bag"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+      <button class="btn whishlist"><i class="fas fa-bookmark"></i> WHISHLIST</button>
+    </div>        
+  </div>
+  <div class="pdDiv">
+    <h3 class="product-details">Product Details</h3>
+    <p>${tops[card].productDetails[0]}</p>
+    <p><span>Top Pattern:</span> ${tops[card].TopPattern}</p>
+    <p><span>Sleave Length:</span> ${tops[card].sleeveLength}</p>
+    <p><span>Wash:</span> ${tops[card].machineWash}</p>
+  </div>        
+</div>
+            `
+  console.log(output);
+  display_kurtas.innerHTML = output;
+}
+
+
+const processDetailsTops = (card) => {
+  toggle();
+  showDetailsTops(card);
+  closeWindow();
+};
+// ##########################################################################################
+
+const showDetailsHeels = (card) => {
+  let output = "";
+  output += `
+<div class="pop-structure">
+  <div class="close-display"><i class="fas fa-window-close"></i></div>
+  <div class="row"> 
+    <div class="displayImg">
+      <img src="${heels[card].img}" alt="">
+    </div>
+    <div class="displayDetails">
+      <h3 class="display-name">${heels[card].name}</h3>
+      <h3 class="display-subname">${heels[card].subName}</h3>
+      <h2 class="money">${heels[card].price}</h2>
+      <p class="taxes">inclusive of all taxes</p>
+      <h4 class="size">SELECT SIZE</h4>
+      <div class="row-1">
+        <div class="col-2">XS</div>
+        <div class="col-2">S</div>
+        <div class="col-2">M</div>
+        <div class="col-2">L</div>
+        <div class="col-2">XL</div>
+      </div>
+      <button class="btn add-to-bag"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+      <button class="btn whishlist"><i class="fas fa-bookmark"></i> WHISHLIST</button>
+    </div>        
+  </div>
+  <div class="pdDiv">
+    <h3 class="product-details">Product Details</h3>
+    <p>${heels[card].productDetails[0]}</p>
+  </div>        
+</div>
+            `
+  console.log(output);
+  display_kurtas.innerHTML = output;
+}
+
+
+const processDetailsHeels = (card) => {
+  toggle();
+  showDetailsHeels(card);
   closeWindow();
 };
 
