@@ -55,9 +55,8 @@ input[type=search]{
   border: none;
   padding: 6px 10px 6px 12px ;
   border-radius: 5px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 18px;
-  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 .btn-outline{
   border: 1px solid white;
@@ -80,15 +79,15 @@ input[type=search]{
     margin: 0 10px;
   }
   input[type=search]{
-    width: 400px;
+    width: 300px;
   }
 }
 @media only screen and (max-width: 964px){
   input[type=search]{
-    width: 250px;
+    width: 200px;
   }
 }
-@media only screen and (max-width: 812px){
+@media only screen and (max-width: 879px){
   .btn-toggler{
     display: block;
     color: white;
@@ -110,7 +109,7 @@ input[type=search]{
   input[type=search]{
     margin: 0;
     margin-right: 5px;
-    width: 242px;
+    width: 250px;
   }
   .nav-link, .nav-search{
     padding: 10px 0px;
