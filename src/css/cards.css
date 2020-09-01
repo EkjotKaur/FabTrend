@@ -191,3 +191,13 @@
     font-size: 2.5rem;
   }
 }
+@media only screen and (max-width: 816px) {
+  .col-1{
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 511px) {
+  .product-1{
+    height: 160px;
+  }
+}
