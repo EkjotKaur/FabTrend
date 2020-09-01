@@ -200,4 +200,10 @@
   .product-1{
     height: 160px;
   }
+  .cards h1{
+    font-size: 1.5rem;
+  }
+  .col-1 h2, .col-1 p{
+    font-size: 0.8rem;
+  }
 }

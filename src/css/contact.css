@@ -1,0 +1,132 @@
+.contact, .about{
+  background-color: #D1C4E9;
+}
+.profile{
+  background-color: #673AB7;
+  color: white;
+}
+.row-3{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+.row-5{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  justify-content: space-around;
+}
+.profile-item{
+  padding: 20px 0;
+  width: 45%;
+  text-align: center;
+}
+.profile-item img{
+  height: 300px;
+}
+.profile-item h2{
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 20px;
+}
+.row-4 .profile-item p{
+  padding: 3px;
+}
+.row-4{
+  width: 80%;
+  margin: auto;
+}
+.contact-text{
+  width: 40%;
+  padding: 60px 20px; 
+}
+.contact-text h1{
+  font-family: 'Cinzel', serif;
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+.contact-text h3{
+  /* font-family: 'Cinzel', serif; */
+  font-size: 1.7rem;
+  font-style: italic;
+  font-weight: 900;
+  color: #673AB7;
+}
+.contact-text h2{
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.contact-form{
+  width: 50%;
+  margin: 60px 20px;
+  padding: 30px;
+  color: white;
+  background-color: #212121;
+}
+.fields{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.label-contact{
+  width: 40%;
+}
+.input-contact{
+  width: 60%;
+  height: 30px;
+}
+.input-contact:focus{
+  outline: 0;
+  border: 2px solid #673AB7;
+  box-shadow: 1px 5px 3px #673AB7;
+}
+.row-4 h1{
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 4rem;
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+}
+.row-4 p{
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+.small{
+  width: 85%;
+  text-align: justify;
+}
+.small p:nth-child(5), .small p:nth-child(6){
+  font-weight: 700;
+}
+@media only screen and (max-width: 978px){
+  .row-3{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 978px){
+  .row-3{
+    width: 80%;
+  }
+  .contact-text{
+    width: 80%;
+  }
+  .contact-form{
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 437px){
+  .contact-text h1{
+    font-size: 2rem;
+  }
+  .contact-text h3{
+    font-size: 1.3rem;
+  }
+  .contact-text h2{
+    font-size: 1.6rem;
+  }
+}

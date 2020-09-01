@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/navbar.css">
     <link rel="stylesheet" href="./src/css/modal.css">
+    <link rel="stylesheet" href="./src/css/slideshow.css">
     <link rel="stylesheet" href="./src/css/cards.css">
-
+    
     <title>FabTrend</title>   
   </head>
   <body>
     <nav class="navbar dark-primary-color text-primary-color m-0">
-      <a href="./" class="navbar-brand">FabTrend</a>
+      <a href="./" class="navbar-brand">Fab<span>Trend</span></a>
       <button class="btn-toggler">
         <i class="fas fa-bars"></i> 
       </button>
@@ -90,10 +91,10 @@
             <div><a href="./mens.html">Mens</a></div>
           </li>
           <li class="nav-link">
-            <div><a href="./assessories">Assessories</a></div>
+            <div><a href="./assessories.html">Assessories</a></div>
           </li>
           <li class="nav-link">
-            <div><a href="./contact">Contact</a></div>
+            <div><a href="./contact.html">Contact</a></div>
           </li>
         </ul>
       </div>
@@ -121,7 +122,7 @@
           <div><a href="./assessories.html">Assessories</a></div>
         </li>
         <li class="nav-link mx-0 py-1 pl-0">
-          <div><a href="./contact">Contact</a></div>
+          <div><a href="./contact.html">Contact</a></div>
         </li>
       </ul>
     </div>
@@ -139,19 +140,20 @@
           <form>
             <div class="input-group">
               <label for="email-login">Email:</label>
-              <input type="email" name="" id="email-login">
+              <input type="email" name="" id="email-login" required />
             </div>
             <div class="input-group">
               <label for="password-login">Password:</label>
-              <input type="email" name="" id="email-login">
-            </div>          
+              <input type="password" name="" id="password-login" required  minlength="8"/>
+            </div>         
+            <hr>
+            <div class="modal-footer">
+              <button type="submit" class="btn default-primary-color default-border-color text-primary-color modal-btn">Login</button>
+              <button type="reset" onclick="closeLogin()"  class="btn default-color default-border-color modal-btn">Close</button>
+            </div>
           </form>
         </div>
-        <hr>
-        <div class="modal-footer">
-          <button type="submit" class="btn default-primary-color default-border-color text-primary-color modal-btn">Login</button>
-          <button type="reset" onclick="closeLogin()"  class="btn default-color default-border-color modal-btn">Close</button>
-        </div>
+        
       </div>
     </div>
     <!-- The Modal -->
@@ -167,29 +169,30 @@
           <form>
             <div class="input-group">
               <label for="fname-login">First Name:</label>
-              <input type="text" name="" id="fname-login">
+              <input type="text" name="" id="fname-login" required minlength="3"/>
             </div>
             <div class="input-group">
               <label for="lname-login">Last Name:</label>
-              <input type="text" name="" id="lname-login">
+              <input type="text" name="" id="lname-login" required minlength="3"/>
             </div>
             <div class="input-group">
               <label for="email-login">Email:</label>
-              <input type="email" name="" id="email-login">
+              <input type="email" name="" id="email-login" required/>
             </div>
             <div class="input-group">
               <label for="password-login">Password:</label>
-              <input type="email" name="" id="email-login">
-            </div>          
+              <input type="password" name="" id="password-login" required minlength="8"/>
+            </div>    
+            <hr>
+            <div class="modal-footer">
+              <button type="submit" class="btn default-primary-color default-border-color text-primary-color modal-btn">Sign Up</button>
+              <button type="button" onclick="closeSignUp()"  class="btn default-color default-border-color modal-btn closeWindow">Close</button>
+            </div>      
           </form>
-        </div>
-        <hr>
-        <div class="modal-footer">
-          <button type="submit" class="btn default-primary-color default-border-color text-primary-color modal-btn">Sign Up</button>
-          <button type="button" onclick="closeSignUp()"  class="btn default-color default-border-color modal-btn closeWindow">Close</button>
         </div>
       </div>
     </div>
+
 
     <!-- ####################################################################################### -->
 

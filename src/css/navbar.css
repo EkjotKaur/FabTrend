@@ -30,6 +30,11 @@ a{
   margin: 0 10px 2px 15px;
   font-size: 1.2rem;
 }
+.nav-link:hover{
+  color: #212121;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px white;
+}
 .navbar-collapse{
   display: flex;
   width: 70%;
@@ -41,12 +46,12 @@ a{
 input[type=search]{
   height: 2rem;
   margin: 0 10px;
-  width: 400px;
+  width: 350px;
   padding: 10px;
   border-radius: 5px;
 }
 .nav-search{
-  margin-right: 100px;
+  margin-right: 70px;
   display: flex;
 }
 .btn{
@@ -66,15 +71,26 @@ input[type=search]{
   display: none;
 }
 .navbar-brand{
-  font-size: 1.5rem;
-  padding: 10px;
+  font-size: 2.5rem;
+  padding: 7px;
+  font-weight: 600;
 }
 .navbar-toggle{
   display: none;
 }
+.navbar-brand span{
+  color: #212121;
+  text-shadow: 4px 2px 4px white;
+  /* font-size: 2.7rem; */
+  font-weight: 900;
+  font-style: oblique;
+  font-family: 'Playball', cursive;
+  padding: 0;
+  margin: 0;
+}
 
 
-@media only screen and (max-width: 1090px){
+@media only screen and (max-width: 1190px){
   .nav-search{
     margin: 0 10px;
   }
@@ -82,12 +98,12 @@ input[type=search]{
     width: 300px;
   }
 }
-@media only screen and (max-width: 964px){
+@media only screen and (max-width: 1064px){
   input[type=search]{
     width: 200px;
   }
 }
-@media only screen and (max-width: 879px){
+@media only screen and (max-width: 979px){
   .btn-toggler{
     display: block;
     color: white;
