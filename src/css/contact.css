@@ -130,3 +130,23 @@
     font-size: 1.6rem;
   }
 }
+@media only screen and (max-width: 776px){
+  .profile-item{
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 494px){
+  .profile-item img{
+    height: 200px;
+  }
+  .row-4 h1{
+    font-size:2.2rem;
+    padding-bottom: 0;
+  }
+  .row-4 p{
+    font-size: 1rem;
+  }
+  .small p{
+    font-size: 0.8rem;
+  }
+}
