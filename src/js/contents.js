@@ -161,7 +161,7 @@ const display_kurtas = document.getElementById("kurta");
 const showDetails = (card) => {
   let output = "";
   output += `
-<div class="pop-structure">
+<div class="pop-structure" style="padding-top: 20px;">
   <div class="close-display"><i class="fas fa-window-close"></i></div>
   <div class="row"> 
     <div class="displayImg">
@@ -219,7 +219,7 @@ const processDetails = (card) => {
 const showDetailsTops = (card) => {
   let output = "";
   output += `
-<div class="pop-structure">
+<div class="pop-structure" style="padding-top: 20px;">
   <div class="close-display"><i class="fas fa-window-close"></i></div>
   <div class="row"> 
     <div class="displayImg">
@@ -266,7 +266,7 @@ const processDetailsTops = (card) => {
 const showDetailsHeels = (card) => {
   let output = "";
   output += `
-<div class="pop-structure">
+<div class="pop-structure" style="padding-top: 20px;">
   <div class="close-display"><i class="fas fa-window-close"></i></div>
   <div class="row"> 
     <div class="displayImg">

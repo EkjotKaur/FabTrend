@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/palette.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/navbar.css">
+    <link rel="stylesheet" href="./src/css/modal.css">
+    <link rel="stylesheet" href="./src/css/slideshow.css">
+    <link rel="stylesheet" href="./src/css/cards.css">
+    
+    <title>FabTrend</title>   
+  </head>
+  <body>
+    <nav class="navbar dark-primary-color text-primary-color m-0">
+      <a href="./" class="navbar-brand">Fab<span>Trend</span></a>
+      <button class="btn-toggler">
+        <i class="fas fa-bars"></i> 
+      </button>
+
+      <div class="navbar-collapse">
+        <ul class="navbar-list">
+          <li>
+            <form class="nav-search">
+              <input type="search" name="" id="" placeholder="Search products, brands and more">
+              <button class="btn default-primary-color text-primary-color btn-outline">Search</button>
+            </form>
+          </li>
+          <li class="nav-link">
+            <div><a onclick="loginModal()">Login <span><i class="fas fa-user"></i></span></a></div>
+          </li>
+          <li class="nav-link">
+            <div><a onclick="signUpModal()">SignUp <span><i class="fas fa-user-plus"></i></span></a></div>
+          </li>
+          <!-- <li class="nav-link">
+            <div><a>Cart</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a>Help</a></div>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+    <div class="navbar-toggle toggler dark-primary-color text-primary-color m-0">
+      <ul class="navbar-list m-0">
+        <li>
+          <form class="nav-search">
+            <input type="search" name="" id="" placeholder="Search products, brands and more">
+            <button class="btn default-primary-color text-primary-color btn-outline">Search</button>
+          </form>
+        </li>
+        <li class="nav-link">
+          <div><a onclick="loginModal()">Login</a></div>
+        </li>
+        <li class="nav-link">
+          <div><a onclick="signUpModal()" >SignUp</a></div>
+        </li>
+        <!-- <li class="nav-link">
+          <div><a href="./cart">Cart</a></div>
+        </li>
+        <li class="nav-link">
+          <div><a href="./help">Help</a></div>
+        </li> -->
+      </ul>
+    </div>
+
+    <nav class="navbar default-primary-color text-primary-color m-0 subnavbar">  
+      <div class="navbar-collapse subnav">
+        <ul class="navbar-list">
+          <li class="nav-link">
+            <div><a href="./index.html">Home</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./about.html">About</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./kids.html">Kids</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./women.html">Womens</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./mens.html">Mens</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./assessories.html">Accessories</a></div>
+          </li>
+          <li class="nav-link">
+            <div><a href="./contact.html">Contact</a></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="navbar-toggle toggler dark-primary-color text-primary-color m-0 subnav">
+      <hr class="m-0 p-0">
+      <ul class="navbar-list m-0">
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./index.html">Home</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./about.html">About</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./kids.html">Kids</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./women.html">Womens</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./mens.html">Mens</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./assessories.html">Accessories</a></div>
+        </li>
+        <li class="nav-link mx-0 py-1 pl-0">
+          <div><a href="./contact.html">Contact</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- The Modal -->
+    <div id="loginModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content light-primary-color">
+        <div class="modal-header">
+          <span onclick="closeLogin()" class="close">&times;</span>
+          <h2>Login</h2>
+        </div>
+        <hr>
+        <div class="modal-body ">
+          <form>
+            <div class="input-group">
+              <label for="email-login">Email:</label>
+              <input type="email" name="" id="email-login" required />
+            </div>
+            <div class="input-group">
+              <label for="password-login">Password:</label>
+              <input type="password" name="" id="password-login" required  minlength="8"/>
+            </div>         
+            <hr>
+            <div class="modal-footer">
+              <button type="submit" class="btn default-primary-color default-border-color text-primary-color modal-btn">Login</button>
+              <button type="reset" onclick="closeLogin()"  class="btn default-color default-border-color modal-btn">Close</button>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="signUpModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content light-primary-color">
+        <div class="modal-header">
+          <span onclick="closeSignUp()" class="close">&times;</span>
+          <h2>Sign Up</h2>
+        </div>
+        <hr>
+        <div class="modal-body ">
+          <form>
+            <div class="input-group">
+              <label for="fname-login">First Name:</label>
+              <input type="text" name="" id="fname-login" required minlength="3"/>
+            </div>
+            <div class="input-group">
+              <label for="lname-login">Last Name:</label>
+              <input type="text" name="" id="lname-login" required minlength="3"/>
+            </div>
+            <div class="input-group">
+              <label for="email-login">Email:</label>
+              <input type="email" name="" id="email-login" required/>
+            </div>
+            <div class="input-group">
+              <label for="password-login">Password:</label>
+              <input type="password" name="" id="password-login" required minlength="8"/>
+            </div>    
+            <hr>
+            <div class="modal-footer">
+              <button type="submit" class="btn default-primary-color default-border-color text-primary-color modal-btn">Sign Up</button>
+              <button type="button" onclick="closeSignUp()"  class="btn default-color default-border-color modal-btn closeWindow">Close</button>
+            </div>      
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ####################################################################################### -->
+
+    <div class="whole-section">
+    <section class="kurtas cards">
+      <h1 class="m-0">Shirts and T-Shirts</h1>
+      <hr>
+      <div class="row">
+        <div class="col-1" id="kurta-1">
+        <a onclick="processDetailsShirt(0)" ><img class="product-1" src="./src/img/shirt/shirt-1.webp" alt="">
+          <h2>Roadster</h2>
+          <p>Men Grey Melange All-Over-Printed T-shirt</p>
+          <p>Rs. 419</p>
+        </a></div>
+        <div class="col-1" id="kurta-2">
+        <a onclick="processDetailsShirt(1)" ><img class="product-1" src="./src/img/shirt/shirt-2.webp" alt="">
+          <h2>Roadster</h2>
+          <p>Men Charcoal Grey & Maroon Striped Polo T-shirt</p>
+          <p>Rs. 699</p>    
+        </a></div>
+        <div class="col-1" id="kurta-3">
+        <a onclick="processDetailsShirt(2)" ><img class="product-1" src="./src/img/shirt/shirt-3.webp" alt="">
+          <h2>Mast & Harbour</h2>
+          <p>Men Teal Blue Slim Fit Solid Casual Shirt</p>
+          <p>Rs. 1044</p>
+        </a></div>
+        <div class="col-1" id="kurta-4">
+        <a onclick="processDetailsShirt(3)" ><img class="product-1" src="./src/img/shirt/shirt-4.webp" alt="">
+          <h2>Campus Sutra</h2>
+          <p>Men Navy Blue & Grey Standard Fit Colourblocked Casual Shirt</p>
+          <p>Rs. 599</p>  
+        </a></div>
+      </div>
+    </section>
+
+    <!-- ####################################################################################### -->
+
+    <section class="tops cards">
+      <h1 class="m-0">Shoes</h1>
+      <hr>
+      <div class="row">
+        <div class="col-1" id="kurta-1">
+        <a onclick="processDetailsShoes(0)" ><img class="product-1" src="./src/img/shoes/shoes-1.webp" alt="">
+          <h2>Mast & Harbour</h2>
+          <p>Men White Sneakers</p>
+          <p>Rs. 839</p>
+        </a></div>
+        <div class="col-1" id="kurta-2">
+        <a onclick="processDetailsShoes(1)" ><img class="product-1" src="./src/img/shoes/shoes-2.webp" alt="">
+          <h2>Vans</h2>
+          <p>Men Navy Blue Sneakers</p>
+          <p>Rs. 9999</p>        
+        </a></div>
+        <div class="col-1" id="kurta-3">
+        <a onclick="processDetailsShoes(2)" ><img class="product-1" src="./src/img/shoes/shoes-3.webp" alt="">
+          <h2>FILA</h2>
+          <p>Men Grey & Orange ALFRED Tennis Shoes</p>
+          <p>Rs. 1599</p>    
+        </a></div>
+        <div class="col-1" id="kurta-4">
+        <a onclick="processDetailsShoes(3)" ><img class="product-1" src="./src/img/shoes/shoes-4.webp" alt="">
+          <h2>MENGLER</h2>
+          <p>Men Black Textile Walking Shoes</p>
+          <p>Rs. 699</p> 
+        </a></div>
+      </div>
+    </section>
+    </div>
+    <!-- ############################################################################################## -->
+
+    <div id="kurta" class="light-primary-color ">
+      <!-- <div class="pop-structure">
+        <div class="row"> 
+          <div class="displayImg">
+            <img src="./src/img/kurtas/pic-7.webp" alt="">
+          </div>
+          <div class="displayDetails">
+            <h3 class="display-name">Libas</h3>
+            <h3 class="display-subname">Women Navy Blue Block Print Straight Kurta</h3>
+            <h2 class="money">Rs. 779</h2>
+            <p class="taxes">inclusive of all taxes</p>
+            <h4 class="size">SELECT SIZE</h4>
+            <div class="row-1">
+              <div class="col-2">XS</div>
+              <div class="col-2">S</div>
+              <div class="col-2">M</div>
+              <div class="col-2">L</div>
+              <div class="col-2">XL</div>
+            </div>
+            <button class="btn add-to-bag"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+            <button class="btn whishlist"><i class="fas fa-bookmark"></i> WHISHLIST</button>
+          </div>        
+        </div>
+        <div class="pdDiv">
+          <h3 class="product-details">Product Details</h3>
+          <p>Navy Blue printed straight kurta, has a stylised keyhole neck, three-quarter sleeves, straight hem, side slits, hook-and-eye closure</p>
+          <p><span>Top Pattern:</span> Solid</p>
+          <p><span>Sleave Length:</span> Three-Quarter Sleeves</p>
+          <p><span>Wash:</span> Machine</p>
+        </div>        
+      </div> -->
+    </div>
+
+    <footer class="dark-primary-color m-0 p-0">
+      <div class="row-6">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./women.html">Womens</a></li>
+            <li><a href="./mens.html">Mens</a></li>
+            <li><a href="./kids.html">Kids</a></li>
+            <li><a href="./accessories.html">Accessories</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-details">
+          <a href="https://ekjotkaur.github.io/FabTrend/"><p class="site">https://ekjotkaur.github.io/FabTrend/</p></a>
+          <p><span>Emails:</span>ekjotkaur@gmail.com</p>
+          <p><span>Tel:</span>9998789321, 9998734563</p>
+        </div>
+      </div>
+      <p class="copyright">© Copyrights Fab<span>Trends<span></p>
+    </footer>
+
+    <script src="./src/js/navbar.js"></script>
+    <script src="./src/js/modal.js"></script>
+    <script src="./src/js/contents_mens.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  </body>
+</html>

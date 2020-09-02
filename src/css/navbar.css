@@ -30,6 +30,12 @@ a{
   margin: 0 10px 2px 15px;
   font-size: 1.2rem;
 }
+.nav-link{
+  white-space: nowrap;
+}
+.nav-link i{
+  padding-left: 3px;
+}
 .nav-link:hover{
   color: #212121;
   font-weight: 900;
