@@ -85,14 +85,16 @@ input[type=search]{
   display: none;
 }
 .navbar-brand span{
-  color: #212121;
-  text-shadow: 4px 2px 4px white;
-  /* font-size: 2.7rem; */
+  color: white;
+  text-shadow: 4px 2px 4px #212121;
+  font-size: 2.6rem;
   font-weight: 900;
   font-style: oblique;
   font-family: 'Playball', cursive;
   padding: 0;
   margin: 0;
+  letter-spacing: 5px;
+  word-spacing: 0;
 }
 .row-6{
   width: 80%;
