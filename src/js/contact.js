@@ -25,8 +25,8 @@ const telno = (event) => {
 const queryplss = (event) => {
   let output;
   console.log(event.target.value.length);
-  if(event.target.value.length<20){
-    output = `<p>Query is very short. Please explain in detail</p>`;
+  if(event.target.value.length<50){
+    output = `<p>Query is very short. It should contain atleast 50 Characters. Please explain in detail</p>`;
     document.getElementById("error").style.display = "block";
   }
   else{
