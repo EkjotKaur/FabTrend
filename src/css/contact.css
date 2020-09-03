@@ -150,3 +150,17 @@
     font-size: 0.8rem;
   }
 }
+#error{
+  background-color: rgba(194, 23, 23, 0.622);
+  padding: 10px 20px;
+  color: white;
+  font-style: italic;
+  border-radius: 10px;
+  display: none;
+}
+.fields + button {
+  float: right;
+  padding: 10px 20px ;
+  font-size: 1.2rem;
+  font-weight: 700;
+}

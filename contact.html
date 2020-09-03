@@ -198,14 +198,17 @@
     <section class="contact">
     <div class="row-3">
       <div class="contact-text">
+        <div id="error">
+
+        </div>
         <h1>Tell You How Can We Help You????</h1>
         <h3>Stay Connected!!!!</h3>
         <h2>Help Us To Know About Your Review :)</h2>
       </div>
       <div class="contact-form row-2">
         <div class="fields">
-          <label for="name-contact" class="label-contact">Full Name</label>
-          <input type="text" class="input-contact" />
+          <label for="name-contact" class="label-contact" >Full Name</label>
+          <input type="text" class="input-contact" onchange="fullname(event)" id="name-contact"/>
         </div>
         <div class="fields">
           <label for="email-contact"  class="label-contact">Email</label>
@@ -221,12 +224,13 @@
         </div>
         <div class="fields">
           <label for="tel-contact " class="label-contact">Contact Number</label>
-          <input type="number" class="input-contact"/>
+          <input type="number" class="input-contact" onchange="telno(event)"/>
         </div>
         <div class="fields">
           <label for="query-contact" class="label-contact">Write Your Query</label>
-          <textarea name="" id="" cols="20" rows="8" class="input-contact"></textarea>
+          <textarea name="" id="" cols="20" rows="8" class="input-contact" onchange="queryplss(event)"></textarea>
         </div>
+        <button type="submit" class="btn default-primary-color text-primary-color btn-outline">Submit</button>
       </div>
     </div>
     </section>
@@ -255,7 +259,7 @@
 
     <script src="./src/js/navbar.js"></script>
     <script src="./src/js/modal.js"></script>
-    <script src="./src/js/slideshow.js"></script>
+    <script src="./src/js/contact.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   </body>
