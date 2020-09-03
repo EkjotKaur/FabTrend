@@ -208,13 +208,14 @@
         <h2>Help Us To Know About Your Review :)</h2>
       </div>
       <div class="contact-form row-2">
+        <form action="">
         <div class="fields">
           <label for="name-contact" class="label-contact" >Full Name</label>
-          <input type="text" class="input-contact" onchange="fullname(event)" id="name-contact"/>
+          <input type="text" class="input-contact" onchange="fullname(event)" id="name-contact" required/>
         </div>
         <div class="fields">
           <label for="email-contact"  class="label-contact">Email</label>
-          <input type="email" class="input-contact" />
+          <input type="email" class="input-contact" required />
         </div>
         <div class="fields">
           <label for="country-contact " class="label-contact">Country</label>
@@ -226,13 +227,14 @@
         </div>
         <div class="fields">
           <label for="tel-contact " class="label-contact">Contact Number</label>
-          <input type="number" class="input-contact" onchange="telno(event)"/>
+          <input type="number" class="input-contact" onchange="telno(event)" required/>
         </div>
         <div class="fields">
           <label for="query-contact" class="label-contact">Write Your Query</label>
-          <textarea name="" id="" cols="20" rows="8" class="input-contact" onchange="queryplss(event)"></textarea>
+          <textarea name="" id="" cols="20" rows="8" class="input-contact" onchange="queryplss(event)" required></textarea>
         </div>
         <button type="submit" class="btn default-primary-color text-primary-color btn-outline">Submit</button>
+        </form>
       </div>
     </div>
     </section>
